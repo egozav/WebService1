@@ -33,5 +33,10 @@ namespace WebService1
 
             return result;
         }
+        [WebMethod]
+        public int GetDate()
+        {
+            return DateTime.Now.Day;
+        }
     }
 }

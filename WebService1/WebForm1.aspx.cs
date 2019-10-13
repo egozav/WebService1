@@ -19,7 +19,12 @@ namespace WebService1
             GetTime webService = new GetTime();
             List<int> lstIntegers = new List<int> { 5, 6, 7 };
             Label1.Text = "Output of WebService: " + webService.Add(lstIntegers).ToString();
+        }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            GetTime webService = new GetTime();
+            Label2.Text = "Output of WebService: " + webService.GetDate().ToString();
         }
     }
 }
